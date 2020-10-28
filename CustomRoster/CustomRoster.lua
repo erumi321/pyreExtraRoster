@@ -68,10 +68,12 @@ ModUtil.WrapBaseFunction( "PrepareLocalMPDraft", function(baseFunc, TeamAid, Tea
 				character.MaskSaturationAddition2 = bench.MaskSaturationAddition2
 				character.MaskValueAddition2 = bench.MaskValueAddition2
 				
+				character.SkillTreeA = character.Archetype .. "A"
+				character.SkillTreeB = character.Archetype .. "B"
+				
 				if bench.UsePhantomShader then
 					character.FirstName = "Rivals_Captain17_FirstName"
 				end
-				
 				TeamAbench[character.CharacterIndex] = character
 			end
 			for i,v in ipairs(config.TeamB) do
@@ -88,6 +90,9 @@ ModUtil.WrapBaseFunction( "PrepareLocalMPDraft", function(baseFunc, TeamAid, Tea
 				character.MaskHue2 = bench.MaskHue2
 				character.MaskSaturationAddition2 = bench.MaskSaturationAddition2
 				character.MaskValueAddition2 = bench.MaskValueAddition2
+			
+				character.SkillTreeA = character.Archetype .. "A"
+				character.SkillTreeB = character.Archetype .. "B"
 			
 				if bench.UsePhantomShader then
 					character.FirstName = "Rivals_Captain17_FirstName"
